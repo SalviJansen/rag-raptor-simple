@@ -1,12 +1,15 @@
 {
   "name": "rag-raptor-simple",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "wrangler": "^3.0.0",
+    "vitest": "1.3.0",
+    "@cloudflare/vitest-pool-workers": "^0.1.0"
+  }
 }
